@@ -1,5 +1,4 @@
 path = "pam1.txt"
-#path = "/Users/blueswen/Documents/NCCU/1051/Bio/hw/hw1/pam1.txt"
 # read PAM1 from data
 pam1<-read.table(file = path)
 pam1 <- as.matrix(pam1/10000)
