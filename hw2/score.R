@@ -12,8 +12,8 @@ Rstudio <- FALSE
 parser <- ArgumentParser(description='Calculate pairwise sequence alignment score.')
 parser$add_argument('--input', help='input fasta file', required=TRUE)
 parser$add_argument('--score', help='input score file', required=TRUE)
-parser$add_argument('--gap_open', type='integer', help='gap open num', default=-10)
-parser$add_argument('--gap_extend', type='integer', help='gap extend num', default=-2)
+parser$add_argument('--gap_open', type='integer', help='gap open penalty', default=-10)
+parser$add_argument('--gap_extend', type='integer', help='gap extend penalty', default=-2)
 if(Rstudio){
   m_input <- '~/Documents/NCCU/1051/Bio/hw/hw2/result.fasta'
   m_score <- '~/Documents/NCCU/1051/Bio/hw/hw2/PAM250.txt'

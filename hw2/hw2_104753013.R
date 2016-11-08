@@ -11,11 +11,11 @@ Rstudio <- FALSE
 
 args <- NULL
 parser <- ArgumentParser(description='Pairwise sequence alignment with gap open penalty and gap extend penalty.')
-parser$add_argument('--input', help='input fasta file', required=TRUE) 
+parser$add_argument('--input', help='input fasta file', required=TRUE)
 parser$add_argument('--score', help='input score file', required=TRUE)
 parser$add_argument('--aln', type='character', choices=c('global','local'), default='global', help='align way')
-parser$add_argument('--gap_open', type='double', help='gap open num', default=-10)
-parser$add_argument('--gap_extend', type='double', help='gap extend num', default=-2)
+parser$add_argument('--gap_open', type='double', help='gap open penalty', default=-10)
+parser$add_argument('--gap_extend', type='double', help='gap extend penalty', default=-2)
 parser$add_argument('--output', help='output fasta file', required=TRUE)
 parser$add_argument('--no_penalty', action='store_true', help='disable two gap-penalty scheme')
 
