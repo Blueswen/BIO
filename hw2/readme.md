@@ -9,23 +9,23 @@
 
 ### hw2_104753013.R
 
-```
-Rscript hw2_104753013.R --input test.fasta --score pam250.txt --aln global --gap_open -10 --gap_extend -2 --output result.fasta
-```
+Pairwise sequence alignment with gap open penalty and gap extend penalty.
 
 usage: hw2_104753013.R [-h] --input INPUT --score SCORE [--aln {global,local}]
                        [--gap_open GAP_OPEN] [--gap_extend GAP_EXTEND]
                        --output OUTPUT [--no_penalty]
 
-Pairwise sequence alignment with gap open penalty and gap extend penalty.
+```
+Rscript hw2_104753013.R --input test.fasta --score pam250.txt --aln global --gap_open -10 --gap_extend -2 --output result.fasta
+```
 
 ### score.R
 
-```
-Rscript score.R --input result.fasta --score PAM250.txt --gap_open -10 --gap_extend -2
-```
+Calculate pairwise sequence alignment score.
 
 usage: score.R [-h] --input INPUT --score SCORE [--gap_open GAP_OPEN]
                [--gap_extend GAP_EXTEND]
 
-Calculate pairwise sequence alignment score.
+```
+Rscript score.R --input result.fasta --score PAM250.txt --gap_open -10 --gap_extend -2
+```
